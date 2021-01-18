@@ -1,0 +1,9 @@
+
+body{
+    background-color: transparent;
+    height: 100vh;
+    background-image: url(../images/salon.jpg);
+    background-size: cover;
+    position: relative;
+}
+

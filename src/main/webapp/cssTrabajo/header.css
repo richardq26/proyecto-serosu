@@ -1,0 +1,52 @@
+
+.imagen {
+    width: 100%;
+    height: 568px;
+    top: 50px;
+    
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(229, 46%, 18%, 0.637), hsla(209, 75%, 62%, 0.486)), url(../img/cabecera.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    
+    background:url(../img/cabecera.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    display: block;
+    position: relative;
+    background-position: 100% 70%;
+    background-repeat: no-repeat;
+    
+    background-attachment: fixed;
+    
+
+}
+
+
+
+@media (max-width:877px){
+    .imagen{
+        width: 100%;
+        height: 500px;
+    }
+}
+
+@media (max-width:718px){
+    .imagen{
+        width: 100%;
+        height: 400px;
+    }
+}
+
+@media (max-width:574px){
+    .imagen{
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media (max-width:434px){
+    .imagen{
+        width: 100%;
+        height: 250px;
+    }
+}

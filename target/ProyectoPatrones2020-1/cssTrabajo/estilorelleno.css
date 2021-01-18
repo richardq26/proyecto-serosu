@@ -1,0 +1,20 @@
+.imagen{
+    width: 500px;
+    height: 450px;
+    margin: 10px;
+}
+
+.imgpresentacion{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 10px rgb(110, 23, 23);
+}
+
+h4,h3{
+    color: rgb(160, 73, 47);
+}
+
+.subtitu{
+    color: rgb(43, 172, 204);
+}

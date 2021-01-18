@@ -1,0 +1,158 @@
+
+.menu{
+	font-family: 'open sans';
+	
+	box-shadow: 1px 2px 5px rgba(0,0,0,.5);
+	
+	
+	width: 100%;
+	height: 50px;
+	
+	/*color pagina actual azul */
+	background-image: linear-gradient(223deg,#421b2d 25%,#8f3131);
+
+	/*color pagina actual celeste 
+	background-image: linear-gradient(223deg,#276f96 42%,#243783);*/
+	
+	/* color para imagen top */
+	/*background-image: linear-gradient(to bottom,rgba(0,0,0,.7) 10%,rgba(0,0,0,0))*/
+}
+
+.container{
+	height: 100% !important;
+}
+
+.boton-hamburguesa{
+	z-index: 2;
+}
+
+.menu .id-collapse{
+	height: 100%;
+	top: 10px;
+	
+}
+
+.menu .ul-collapse{
+	height: 100%;
+	top: 10px;
+	
+}
+.menu ul li{
+	display:block;
+	height: 100% !important;
+	
+	position: relative;
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	
+	
+}
+
+.menu ul li.active{
+	border: 1px solid rgba(190,44,25,1);
+	border-radius: 20px;
+	background: linear-gradient(180deg, #421b2d 0%, rgba(200,66,66,0.8158613787311799) 81%, rgba(190,44,25,1) 100%);
+}
+
+.menu ul li a{
+	position: relative;
+	
+	width: 100%;
+	height: 100%;
+	color: white;
+	top: 3px;
+	
+}
+
+.menu ul li:before{
+	
+	display: block;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    opacity: 0;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    content: "";
+    width: 140px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-image: radial-gradient(50% 85% at top,rgba(211, 97, 97, 0.63) 0,rgba(184,253,255,0) 100%);
+    will-change: opacity;
+    -webkit-transition: opacity .2s ease;
+    transition: opacity .2s ease;
+	
+}
+
+.menu ul .ingreso:before{
+	
+	display: none;
+    
+	
+}
+
+.menu ul li:hover:before{
+	opacity: 1;
+	
+}
+
+.boton-hamburguesa{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	width: 40px;
+	height: 40px;
+	background: rgba(146, 47, 47, 0.678);
+	color: white !important;
+}
+ /*media*/
+ 
+ 
+ 
+ @media (max-width: 991px){
+
+
+	.menu ul li.active{
+		border: none;
+		background: #441b2ef1;
+		margin: 0;
+		padding: 0;
+		border-radius: 0;
+		
+	}
+	.menu ul li{
+		background: #441b2ef1;
+		
+	}
+	.menu ul .ingreso{
+		margin: 0;
+	}
+	.menu ul .ingreso:before{
+		display: block;
+		position: absolute;
+		bottom: 0;
+		top: 0;
+		opacity: 0;
+		pointer-events: none;
+		background-repeat: no-repeat;
+		content: "";
+		width: 140px;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		transform: translateX(-50%);
+		background-image: radial-gradient(50% 85% at top,rgba(211, 97, 97, 0.63) 0,rgba(184,253,255,0) 100%);
+		will-change: opacity;
+		-webkit-transition: opacity .2s ease;
+		transition: opacity .2s ease;
+		
+		
+	}
+
+	
+	
+	
+ }
+
